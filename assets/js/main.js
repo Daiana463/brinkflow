@@ -54,7 +54,7 @@ function initMobileMenu() {
 
 /* ─── 03. SMOOTH SCROLL ─── */
 function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]:not([data-cookie-settings])').forEach(anchor => {
     anchor.addEventListener('click', e => {
       const targetId = anchor.getAttribute('href');
       if (targetId === '#') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
@@ -105,13 +105,13 @@ function initScrollAnimations() {
   ──────────────────────────────────────────────────────────────────
 */
 const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
-const BF_FORM_KEY   = 'REEMPLAZAR-CON-TU-ACCESS-KEY-DE-WEB3FORMS';
+const BF_FORM_KEY   = 'd5e4a122-1686-4552-9515-3f6e2378f880';
 
 function showFormSuccess(form) {
   const success = form.querySelector('.form-success');
   const btn     = form.querySelector('button[type="submit"]');
   const consent = form.querySelector('[name="consent"]');
-  form.querySelectorAll('input:not([type="checkbox"]), textarea').forEach(f => { f.value = ''; });
+  form.querySelectorAll('input:not([type="hidden"]):not([type="checkbox"]), textarea').forEach(f => { f.value = ''; });
   if (consent) consent.checked = false;
   if (btn) { btn.disabled = false; btn.textContent = 'Solicitar diagnóstico'; }
   if (success) {
@@ -131,11 +131,11 @@ function initContactForm() {
       if (submitting) return;
 
       const f = {
-        name:     form.querySelector('[name="nombre"]'),
+        name:     form.querySelector('[name="name"]'),
         email:    form.querySelector('[name="email"]'),
-        telefono: form.querySelector('[name="telefono"]'),
-        negocio:  form.querySelector('[name="tipo_negocio"]'),
-        message:  form.querySelector('[name="mensaje"]'),
+        telefono: form.querySelector('[name="phone"]'),
+        negocio:  form.querySelector('[name="business"]'),
+        message:  form.querySelector('[name="message"]'),
         consent:  form.querySelector('[name="consent"]'),
         honeypot: form.querySelector('[name="website"]'),
       };
@@ -143,7 +143,7 @@ function initContactForm() {
       /* Honeypot: si está relleno, descartar silenciosamente */
       if (f.honeypot && f.honeypot.value.trim()) return;
 
-      /* Validación: nombre, email y mensaje obligatorios */
+      /* Validación: name, email y message obligatorios */
       let valid = true;
       [f.name, f.email, f.message].forEach(field => {
         if (!field) return;
@@ -172,16 +172,16 @@ function initContactForm() {
       if (errorEl) errorEl.hidden = true;
 
       const payload = {
-        access_key:   BF_FORM_KEY,
-        name:         f.name?.value.trim()     || '',
-        email:        f.email?.value.trim()    || '',
-        replyto:      f.email?.value.trim()    || '',
-        subject:      'Solicitud de diagnóstico desde BrinkFlow',
-        from_name:    'Formulario BrinkFlow',
-        message:      f.message?.value.trim()  || '',
-        telefono:     f.telefono?.value.trim() || '',
-        tipo_negocio: f.negocio?.value.trim()  || '',
-        botcheck:     '',
+        access_key: BF_FORM_KEY,
+        name:       f.name?.value.trim()     || '',
+        email:      f.email?.value.trim()    || '',
+        replyto:    f.email?.value.trim()    || '',
+        subject:    'Nuevo lead BrinkFlow',
+        from_name:  'BrinkFlow Web',
+        message:    f.message?.value.trim()  || '',
+        phone:      f.telefono?.value.trim() || '',
+        business:   f.negocio?.value.trim()  || '',
+        botcheck:   '',
       };
 
       bfLog('Form → payload enviado a Web3Forms');
@@ -484,6 +484,14 @@ function dismissBanner(prefs) {
 function initCookieBanner() {
   const banner = document.getElementById('cookieBanner');
   if (!banner) return;
+
+  /* ?bf_reset en la URL borra el consentimiento guardado (útil para pruebas locales) */
+  try {
+    if (new URLSearchParams(window.location.search).has('bf_reset')) {
+      localStorage.removeItem(CONSENT_KEY);
+      bfLog('Consentimiento borrado por bf_reset');
+    }
+  } catch(_) {}
 
   initConsentModeDefaults();
 

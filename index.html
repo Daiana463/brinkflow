@@ -290,7 +290,7 @@
             Un plan para cada etapa<br>de tu negocio.
           </h2>
           <p class="section__lead">
-            Sin permanencia mínima obligatoria. Empezamos con el plan que tiene sentido para ti hoy, y lo ajustamos cuando crezcas.
+            Empezamos con el plan que tiene sentido para ti hoy, y lo ajustamos cuando crezcas.
           </p>
         </div>
 
@@ -594,7 +594,14 @@
           </div>
 
           <div class="contact-form" data-animate>
-            <form class="js-contact-form" id="contactForm" novalidate>
+            <form class="js-contact-form" id="contactForm"
+              method="POST" action="https://api.web3forms.com/submit"
+              novalidate>
+
+              <!-- Web3Forms config -->
+              <input type="hidden" name="access_key" value="d5e4a122-1686-4552-9515-3f6e2378f880" />
+              <input type="hidden" name="subject"    value="Nuevo lead BrinkFlow" />
+              <input type="hidden" name="from_name"  value="BrinkFlow Web" />
 
               <!-- Honeypot anti-spam -->
               <div class="form-group form-group--honeypot" aria-hidden="true">
@@ -605,7 +612,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
-                  <input type="text" id="nombre" name="nombre"
+                  <input type="text" id="nombre" name="name"
                     placeholder="Tu nombre"
                     autocomplete="name" required
                     aria-required="true" />
@@ -622,20 +629,20 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="telefono">Teléfono</label>
-                  <input type="tel" id="telefono" name="telefono"
+                  <input type="tel" id="telefono" name="phone"
                     placeholder="+34 600 000 000"
                     autocomplete="tel" />
                 </div>
                 <div class="form-group">
                   <label for="tipo_negocio">Tipo de negocio</label>
-                  <input type="text" id="tipo_negocio" name="tipo_negocio"
+                  <input type="text" id="tipo_negocio" name="business"
                     placeholder="Comercio, clínica, marca…" />
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
-                <textarea id="mensaje" name="mensaje" rows="4"
+                <textarea id="mensaje" name="message" rows="4"
                   placeholder="Cuéntanos brevemente tu situación y qué necesitas mejorar."
                   required aria-required="true"></textarea>
               </div>
@@ -760,7 +767,7 @@
   </div>
 
   <!-- WhatsApp -->
-  <a href="https://wa.me/34634476621?text=Hola%2C+me+interesa+saber+m%C3%A1s+sobre+BrinkFlow."
+  <a href="https://wa.me/34634476261?text=Hola%2C+me+interesa+saber+m%C3%A1s+sobre+BrinkFlow."
      class="whatsapp-bubble" target="_blank" rel="noopener noreferrer"
      aria-label="Contactar por WhatsApp con BrinkFlow">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
