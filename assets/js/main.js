@@ -105,7 +105,7 @@ function initScrollAnimations() {
   ──────────────────────────────────────────────────────────────────
 */
 const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
-const BF_FORM_KEY   = 'd5e4a122-1686-4552-9515-3f6e2378f880';
+const BF_FORM_KEY   = '445bad8b-ca0d-4f35-8210-d38d440f8435';
 
 function showFormSuccess(form) {
   const success = form.querySelector('.form-success');
