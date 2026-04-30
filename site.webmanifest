@@ -1,0 +1,16 @@
+{
+  "name": "BrinkFlow",
+  "short_name": "BrinkFlow",
+  "description": "Agencia de marketing digital y performance marketing en España",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2EDE4",
+  "theme_color": "#2C2C2A",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

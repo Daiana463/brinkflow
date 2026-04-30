@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /legal/
+Disallow: /privacidad/
+Disallow: /cookies/
+
+Sitemap: https://brinkflow.es/sitemap.xml

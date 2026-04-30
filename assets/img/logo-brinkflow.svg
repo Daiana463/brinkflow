@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 34" role="img" aria-label="BrinkFlow">
+  <title>BrinkFlow</title>
+  <!-- Triángulo terracota — sólido, alineado con la altura visual del texto -->
+  <polygon points="0,11 8,17 0,23" fill="#C46A45"/>
+  <!-- Brink — beige claro, regular -->
+  <text
+    x="15" y="24"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="18"
+    font-weight="400"
+    letter-spacing="-0.2"
+    fill="#EAE4DC">Brink</text>
+  <!-- Flow — terracota, itálica, misma familia -->
+  <text
+    x="59" y="24"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="18"
+    font-weight="400"
+    font-style="italic"
+    letter-spacing="-0.2"
+    fill="#C46A45">Flow</text>
+</svg>

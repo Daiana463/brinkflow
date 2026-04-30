@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO primario -->
+  <title>BrinkFlow | Agencia de Marketing Digital y Performance Marketing en España</title>
+  <meta name="description" content="Agencia de marketing digital y performance marketing en España. Gestión de Meta Ads, Google Ads y contenido para comercios, clínicas estéticas y marcas de bienestar. Criterio, constancia y resultados medibles." />
+  <meta name="keywords" content="agencia marketing digital, performance marketing, Meta Ads España, Google Ads España, marketing digital comercios, marketing clínicas estéticas, marketing bienestar, agencia redes sociales España" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://brinkflow.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://brinkflow.es/" />
+  <meta property="og:title"       content="BrinkFlow | Agencia de Marketing Digital y Performance Marketing en España" />
+  <meta property="og:description" content="Ordenamos y tomamos decisiones sobre tu marketing para que dejes de improvisar. Meta Ads, Google Ads, contenido y estrategia mensual para negocios con criterio." />
+  <meta property="og:image"       content="https://brinkflow.es/assets/img/og-brinkflow.jpg" />
+  <meta property="og:site_name"   content="BrinkFlow" />
+  <meta property="og:locale"      content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="BrinkFlow | Agencia de Marketing Digital en España" />
+  <meta name="twitter:description" content="Marketing digital con criterio. Meta Ads, Google Ads y contenido para negocios que quieren dejar de improvisar." />
+  <meta name="twitter:image"       content="https://brinkflow.es/assets/img/og-brinkflow.jpg" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "BrinkFlow",
+    "url": "https://brinkflow.es",
+    "email": "hola@brinkflow.es",
+    "telephone": "+34634476621",
+    "description": "Agencia de marketing digital y performance marketing en España. Gestión de campañas Meta Ads y Google Ads, contenido para redes y estrategia mensual para comercios, clínicas estéticas y marcas de bienestar.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "España"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Planes de marketing digital",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Plan Base", "price": "320", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Plan Control", "price": "580", "priceCurrency": "EUR" },
+        { "@type": "Offer", "name": "Plan Dirección", "price": "820", "priceCurrency": "EUR" }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Consent Mode v2: defaults ANTES de cualquier tracker -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{
+      ad_storage:'denied',analytics_storage:'denied',
+      ad_user_data:'denied',ad_personalization:'denied',
+      functionality_storage:'granted',security_storage:'granted',
+      wait_for_update:500
+    });
+    (function(){
+      try {
+        var c = JSON.parse(localStorage.getItem('bf_consent') || 'null');
+        if (c && c.v === '1') {
+          gtag('consent','update',{
+            ad_storage:         c.marketing ? 'granted' : 'denied',
+            analytics_storage:  c.analytics ? 'granted' : 'denied',
+            ad_user_data:       c.marketing ? 'granted' : 'denied',
+            ad_personalization: c.marketing ? 'granted' : 'denied'
+          });
+        }
+      } catch(e){}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER / NAVEGACIÓN
+  ════════════════════════════════════════════ -->
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Navegación principal">
+
+        <a href="#inicio" class="nav__logo" aria-label="BrinkFlow — inicio">
+          <img src="assets/img/logo-brinkflow.svg" alt="BrinkFlow" class="nav__logo-img" width="140" height="36" />
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="#servicios"  class="nav__link">Servicios</a></li>
+          <li><a href="#planes"     class="nav__link">Planes</a></li>
+          <li><a href="#nosotros"   class="nav__link">Sobre nosotros</a></li>
+          <li><a href="#proceso"    class="nav__link">Proceso</a></li>
+          <li><a href="#contacto"   class="btn btn--nav" data-track="cta_nav_contacto">Solicitar diagnóstico</a></li>
+        </ul>
+
+        <button class="nav__toggle" id="navToggle"
+          aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+      </nav>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu__inner">
+        <ul role="list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#nosotros">Sobre nosotros</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Solicitar diagnóstico</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════ -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__inner">
+
+          <span class="hero__eyebrow">Agencia de marketing digital · España</span>
+
+          <h1 id="hero-title" class="hero__title">
+            Marketing digital con criterio<br>
+            para negocios que quieren<br>
+            <em class="hero__accent">dejar de improvisar.</em>
+          </h1>
+
+          <p class="hero__lead">
+            En BrinkFlow definimos qué tiene sentido hacer, lo ejecutamos con constancia
+            y analizamos qué funcionó cada mes. Campañas, contenido y decisiones
+            con foco comercial, <strong>sin humo y sin métricas vacías.</strong>
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#planes"   class="btn btn--primary btn--lg" data-track="cta_ver_planes">Ver planes</a>
+            <a href="#contacto" class="btn btn--outline  btn--lg" data-track="cta_diagnostico">Solicitar diagnóstico</a>
+          </div>
+
+          <p class="hero__trust">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Criterio, no volumen. Cada decisión tiene un porqué.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         BLOQUE DE PROBLEMA
+    ════════════════════════════════════════════ -->
+    <section class="section bg-white" aria-labelledby="problema-title">
+      <div class="container">
+        <div class="problem-layout">
+          <div class="problem-left">
+
+            <span class="section__eyebrow">El problema</span>
+            <h2 id="problema-title" class="section__title" data-animate>
+              Publicas, pautas y pruebas.<br>Sin dirección clara.
+            </h2>
+            <p data-animate>
+              La mayoría de negocios publica, pauta y prueba acciones sin una dirección
+              clara. El problema no siempre es la falta de esfuerzo, sino la falta de
+              criterio para decidir qué hacer, qué medir y qué repetir.
+            </p>
+
+            <div class="problem-list">
+              <div class="problem-item" data-animate>
+                <span class="problem-item__dot"></span>
+                <p>No hay una estrategia detrás de lo que se publica. Se improvisa semana a semana.</p>
+              </div>
+              <div class="problem-item" data-animate>
+                <span class="problem-item__dot"></span>
+                <p>Las campañas se lanzan sin objetivos claros. Es difícil saber si funcionaron.</p>
+              </div>
+              <div class="problem-item" data-animate>
+                <span class="problem-item__dot"></span>
+                <p>Los datos están, pero nadie los analiza ni toma decisiones en base a ellos.</p>
+              </div>
+              <div class="problem-item" data-animate>
+                <span class="problem-item__dot"></span>
+                <p>El marketing se ve como un gasto, no como una inversión con retorno medible.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="problem-visual" aria-hidden="true">
+            <p class="problem-visual__quote">
+              "No solo se publica. Se decide qué tiene sentido publicar."
+            </p>
+            <p class="problem-visual__attr">BrinkFlow</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SERVICIOS
+    ════════════════════════════════════════════ -->
+    <section id="servicios" class="section bg-beige" aria-labelledby="servicios-title">
+      <div class="container">
+
+        <div class="services-intro" data-animate>
+          <div class="services-intro__left">
+            <span class="section__eyebrow">Servicios</span>
+            <h2 id="servicios-title" class="section__title">
+              Lo que hacemos<br>cada mes para tu negocio.
+            </h2>
+          </div>
+          <div class="services-intro__right">
+            <p class="section__lead" style="margin:0; text-align:left;">
+              No vendemos servicios sueltos. Trabajamos como el equipo de marketing de tu negocio: con un plan, con seguimiento y con decisiones mensuales basadas en datos.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-item" data-animate>
+            <p class="service-item__num">01</p>
+            <h3 class="service-item__title">Estrategia mensual de marketing digital</h3>
+            <p>Definimos qué hacer, en qué canales y con qué objetivo cada mes. No se improvisa, se planifica.</p>
+          </div>
+          <div class="service-item" data-animate>
+            <p class="service-item__num">02</p>
+            <h3 class="service-item__title">Gestión de contenido para redes</h3>
+            <p>Creamos y publicamos contenido alineado con tu marca y tus objetivos comerciales. Sin relleno.</p>
+          </div>
+          <div class="service-item" data-animate>
+            <p class="service-item__num">03</p>
+            <h3 class="service-item__title">Meta Ads — Facebook e Instagram</h3>
+            <p>Diseñamos, lanzamos y optimizamos campañas de pago con foco en resultados medibles, no en impresiones.</p>
+          </div>
+          <div class="service-item" data-animate>
+            <p class="service-item__num">04</p>
+            <h3 class="service-item__title">Google Ads cuando aplique</h3>
+            <p>Para negocios donde la búsqueda activa tiene sentido: búsqueda, display o remarketing con criterio.</p>
+          </div>
+          <div class="service-item" data-animate>
+            <p class="service-item__num">05</p>
+            <h3 class="service-item__title">Calendario editorial mensual</h3>
+            <p>Un calendario claro con qué publicar, cuándo y con qué argumento. Sin improvisación de último momento.</p>
+          </div>
+          <div class="service-item" data-animate>
+            <p class="service-item__num">06</p>
+            <h3 class="service-item__title">Sesiones de contenido</h3>
+            <p>Coordinamos o realizamos sesiones fotográficas y de vídeo para tener material real de tu negocio.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         PLANES
+    ════════════════════════════════════════════ -->
+    <section id="planes" class="section bg-white" aria-labelledby="planes-title">
+      <div class="container">
+
+        <div class="section__header text-center" data-animate>
+          <span class="section__eyebrow">Planes y precios</span>
+          <h2 id="planes-title" class="section__title">
+            Un plan para cada etapa<br>de tu negocio.
+          </h2>
+          <p class="section__lead">
+            Sin permanencia mínima obligatoria. Empezamos con el plan que tiene sentido para ti hoy, y lo ajustamos cuando crezcas.
+          </p>
+        </div>
+
+        <div class="plans-grid">
+
+          <!-- Plan Base -->
+          <div class="plan-card" data-animate>
+            <p class="plan-card__name">Plan Base</p>
+            <p class="plan-card__price">320&thinsp;<span>€/mes +IVA</span></p>
+            <p class="plan-card__tagline">Para negocios que quieren presencia constante y profesional.</p>
+            <p class="plan-card__context">Si todavía no tienes marketing organizado y necesitas empezar con orden y criterio, este es tu punto de partida.</p>
+            <ul class="plan-card__list">
+              <li>Estrategia mensual de marketing</li>
+              <li>Calendario editorial mensual</li>
+              <li>Gestión de 1 red social</li>
+              <li>12 publicaciones al mes</li>
+              <li>Informe mensual básico</li>
+              <li>Producción mensual de contenido (reels, historias y piezas editadas)</li>
+            </ul>
+            <p class="plan-card__alcance">1 ronda de ajustes por pieza · No incluye nuevos formatos ni campañas adicionales</p>
+            <a href="#contacto" class="btn btn--outline btn--full" data-track="cta_plan_base">Solicitar información</a>
+          </div>
+
+          <!-- Plan Control -->
+          <div class="plan-card plan-card--featured" data-animate>
+            <span class="plan-card__badge">Más elegido</span>
+            <p class="plan-card__name">Plan Control</p>
+            <p class="plan-card__price">580&thinsp;<span>€/mes +IVA</span></p>
+            <p class="plan-card__tagline">Para negocios activos que quieren medir, mejorar y crecer.</p>
+            <p class="plan-card__context">Tienes presencia, pero no estás sacándole el partido. Este plan combina contenido constante con campañas de pago y análisis real.</p>
+            <ul class="plan-card__list">
+              <li>Todo lo del Plan Base</li>
+              <li>Gestión de 2 redes sociales</li>
+              <li>20 publicaciones al mes</li>
+              <li>Meta Ads — gestión de campaña activa</li>
+              <li>Producción continua de contenido (reels, historias y piezas editadas)</li>
+              <li>Informe completo con decisiones</li>
+            </ul>
+            <p class="plan-card__alcance">Hasta 2 rondas de ajustes · Testeo sobre campañas activas</p>
+            <a href="#contacto" class="btn btn--primary btn--full" data-track="cta_plan_control">Solicitar información</a>
+          </div>
+
+          <!-- Plan Dirección -->
+          <div class="plan-card" data-animate>
+            <p class="plan-card__name">Plan Dirección</p>
+            <p class="plan-card__price">820&thinsp;<span>€/mes +IVA</span></p>
+            <p class="plan-card__tagline">Para marcas que necesitan dirección estratégica real.</p>
+            <p class="plan-card__context">Campañas activas en Meta y Google, contenido profesional, análisis profundo y dirección creativa mensual. Ideal para quien quiere escalar con datos.</p>
+            <ul class="plan-card__list">
+              <li>Todo lo del Plan Control</li>
+              <li>Meta Ads completo + Google Ads si aplica</li>
+              <li>Gestión completa Multi-canal</li>
+              <li>Producción estratégica de contenido para campañas (reels, historias y piezas editadas)</li>
+              <li>Dirección creativa de mensajes</li>
+              <li>Análisis detallado + próximos pasos</li>
+            </ul>
+            <p class="plan-card__alcance">Gestión dentro de los canales definidos · No incluye desarrollo web ni integraciones externas</p>
+            <a href="#contacto" class="btn btn--outline btn--full" data-track="cta_plan_direccion">Solicitar información</a>
+          </div>
+
+          <!-- Plan a medida -->
+          <div class="plan-card" data-animate>
+            <p class="plan-card__name">Plan a medida</p>
+            <p class="plan-card__price">950&thinsp;<span>€/mes +IVA desde</span></p>
+            <p class="plan-card__tagline">Para marcas con necesidades específicas o múltiples canales.</p>
+            <p class="plan-card__context">Si tu negocio tiene equipos propios, varios canales activos o una estrategia ya definida que necesitas ejecutar con precisión, diseñamos el plan contigo.</p>
+            <ul class="plan-card__list">
+              <li>Servicios definidos a medida</li>
+              <li>Canales y objetivos según tu negocio</li>
+              <li>Integración con tu equipo</li>
+              <li>Informes y procesos adaptados</li>
+            </ul>
+            <a href="#contacto" class="btn btn--outline btn--full" data-track="cta_plan_medida">Hablemos</a>
+          </div>
+
+        </div>
+
+        <!-- Plan Email — Complemento -->
+        <div class="email-plan" data-animate>
+          <span class="email-plan__eyebrow">Palanca de negocio</span>
+          <div class="email-plan__inner">
+
+            <div class="email-plan__left">
+              <h3 class="email-plan__name">Plan Email</h3>
+              <p class="email-plan__descriptor">Seguimiento y recuperación</p>
+
+              <p class="email-plan__problem">
+                La mayoría de negocios consigue visitas o consultas y después no hace nada con eso.
+              </p>
+              <p class="email-plan__context">
+                Ahí es donde se pierden ventas. Este complemento activa el email como canal de seguimiento real: para mantener el contacto, recordar el producto y acompañar la decisión de compra. No para enviar campañas por compromiso.
+              </p>
+
+              <ul class="email-plan__list">
+                <li>4 emails mensuales diseñados y redactados</li>
+                <li>Definimos qué enviar, cuándo y con qué objetivo</li>
+                <li>Diseño alineado a la estética del negocio</li>
+                <li>Automatizaciones básicas configuradas</li>
+                <li>Revisión mensual de resultados</li>
+              </ul>
+
+              <p class="email-plan__alcance">Hasta 4 envíos mensuales · Automatizaciones básicas (no flujos complejos)</p>
+              <p class="email-plan__close">No es enviar emails. Es recuperar oportunidades que ya generaste.</p>
+            </div>
+
+            <div class="email-plan__right">
+              <p class="email-plan__price">240&thinsp;<span>€/mes +IVA</span></p>
+              <p class="email-plan__tagline">se suma para no perder ventas que ya estás generando</p>
+              <a href="#contacto" class="btn btn--primary btn--full" data-track="cta_plan_email">Quiero sumarlo a mi plan</a>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="plans-note">Todos los precios indicados son sin IVA.</p>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         CTA BAND
+    ════════════════════════════════════════════ -->
+    <section class="cta-band" aria-label="Llamada a la acción">
+      <div class="container">
+        <h2 class="cta-band__title" data-animate>
+          ¿No estás seguro de qué plan necesitas?
+        </h2>
+        <p class="cta-band__lead" data-animate>
+          Empezamos con un diagnóstico gratuito de tu situación actual. Sin compromiso, sin presión. Solo una conversación honesta sobre tu marketing.
+        </p>
+        <div class="cta-band__actions" data-animate>
+          <a href="#contacto" class="btn btn--primary btn--lg" data-track="cta_diagnostico">Solicitar diagnóstico gratuito</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SOBRE NOSOTROS
+    ════════════════════════════════════════════ -->
+    <section id="nosotros" class="section bg-sage" aria-labelledby="nosotros-title">
+      <div class="container">
+        <div class="about-layout">
+
+          <div class="about-left">
+            <span class="about-eyebrow">Sobre nosotros</span>
+            <h2 id="nosotros-title" class="section__title" data-animate>
+              Criterio estratégico,<br>contenido y performance.
+            </h2>
+            <p data-animate>
+              BrinkFlow es una agencia de marketing digital y performance marketing orientada a negocios que necesitan ordenar sus canales, mantener una presencia profesional y tomar decisiones basadas en datos.
+            </p>
+            <p data-animate>
+              Trabajamos con comercios, clínicas estéticas, centros de bienestar y marcas que tienen algo valioso que ofrecer y necesitan comunicarlo con criterio. No somos gestores de redes ni publicamos por publicar.
+            </p>
+            <p data-animate>
+              Somos el equipo que analiza, planifica y ejecuta el marketing de tu negocio con foco comercial: desde la estrategia mensual y el contenido hasta las campañas de Meta Ads y Google Ads.
+            </p>
+
+            <div class="about-pillars">
+              <div class="about-pillar" data-animate>
+                <span class="about-pillar__dot"></span>
+                <p><strong>Criterio, no volumen.</strong> Decidimos qué hacer antes de hacerlo.</p>
+              </div>
+              <div class="about-pillar" data-animate>
+                <span class="about-pillar__dot"></span>
+                <p><strong>Datos, no intuición.</strong> Cada cambio se basa en lo que muestran los números.</p>
+              </div>
+              <div class="about-pillar" data-animate>
+                <span class="about-pillar__dot"></span>
+                <p><strong>Resultados, no promesas.</strong> Medimos lo que importa para tu negocio.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="about-stat" data-animate>
+              <p class="about-stat__value">+5</p>
+              <p class="about-stat__label">sectores distintos atendidos: comercio, estética, bienestar, restauración y más.</p>
+            </div>
+            <div class="about-stat" data-animate>
+              <p class="about-stat__value">100%</p>
+              <p class="about-stat__label">informes mensuales con datos reales y decisiones accionables, sin relleno.</p>
+            </div>
+            <div class="about-quote" data-animate>
+              <p class="about-quote__text">"Ordenamos y tomamos decisiones sobre tu marketing para que dejes de improvisar."</p>
+              <p class="about-quote__attr">BrinkFlow</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         PROCESO
+    ════════════════════════════════════════════ -->
+    <section id="proceso" class="section bg-white" aria-labelledby="proceso-title">
+      <div class="container">
+
+        <div class="process-header" data-animate>
+          <div class="process-header__left">
+            <span class="section__eyebrow">Cómo trabajamos</span>
+            <h2 id="proceso-title" class="section__title">Nuestro proceso,<br>mes a mes.</h2>
+          </div>
+          <div class="process-header__right">
+            <p class="section__lead" style="margin:0; text-align:left;">
+              No hay fórmulas mágicas. Hay un proceso claro, repetible y mejorable cada mes. Así funciona el marketing que funciona.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-grid">
+
+          <div class="process-step" data-animate>
+            <div class="process-step__top">
+              <span class="process-step__num">Paso 01</span>
+            </div>
+            <h3 class="process-step__title">Diagnóstico inicial</h3>
+            <p class="process-step__desc">Analizamos el negocio, sus canales actuales, qué está funcionando y qué no. Sin suposiciones: con datos y contexto real.</p>
+          </div>
+
+          <div class="process-step" data-animate>
+            <div class="process-step__top">
+              <span class="process-step__num">Paso 02</span>
+            </div>
+            <h3 class="process-step__title">Definición de objetivos y canales</h3>
+            <p class="process-step__desc">Decidimos qué tiene sentido hacer, en qué canales y con qué objetivo. Priorizamos en función del negocio, no de modas.</p>
+          </div>
+
+          <div class="process-step" data-animate>
+            <div class="process-step__top">
+              <span class="process-step__num">Paso 03</span>
+            </div>
+            <h3 class="process-step__title">Calendario y mensajes</h3>
+            <p class="process-step__desc">Planificamos el mes: qué se publica, cuándo, con qué argumento y para quién. Nada queda al azar ni a última hora.</p>
+          </div>
+
+          <div class="process-step" data-animate>
+            <div class="process-step__top">
+              <span class="process-step__num">Paso 04</span>
+            </div>
+            <h3 class="process-step__title">Producción y campañas</h3>
+            <p class="process-step__desc">Creamos el contenido, lanzamos las campañas y ejecutamos lo planificado con precisión. La ejecución es tan importante como la estrategia.</p>
+          </div>
+
+          <div class="process-step" data-animate>
+            <div class="process-step__top">
+              <span class="process-step__num">Paso 05</span>
+            </div>
+            <h3 class="process-step__title">Medición mensual</h3>
+            <p class="process-step__desc">Analizamos los datos: qué funcionó, qué no y qué aprendimos. Sin métricas vacías: solo lo que impacta en el negocio.</p>
+          </div>
+
+          <div class="process-step" data-animate>
+            <div class="process-step__top">
+              <span class="process-step__num">Paso 06</span>
+            </div>
+            <h3 class="process-step__title">Ajustes y decisiones</h3>
+            <p class="process-step__desc">Con los datos sobre la mesa, decidimos qué cambiamos el próximo mes. El marketing que funciona se construye con iteraciones, no con promesas.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         CONTACTO
+    ════════════════════════════════════════════ -->
+    <section id="contacto" class="section bg-ink" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div class="contact-left">
+            <span class="contact-eyebrow">Contacto</span>
+            <h2 id="contacto-title" class="section__title" data-animate>
+              Empieza con<br>un diagnóstico.
+            </h2>
+            <p data-animate>
+              Cuéntanos dónde estás con tu marketing. Analizamos tu situación y te decimos sin rodeos qué tiene sentido hacer y qué no. Sin compromiso.
+            </p>
+
+            <ul class="contact-details" data-animate>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:hola@brinkflow.es">hola@brinkflow.es</a>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.1 2.38 2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-.44a2 2 0 012.11.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+34634476621">+34 634 476 621</a>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Lunes a viernes, 9:00 – 17:00 h</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form" data-animate>
+            <form class="js-contact-form" id="contactForm" novalidate>
+
+              <!-- Honeypot anti-spam -->
+              <div class="form-group form-group--honeypot" aria-hidden="true">
+                <label for="website-bf">Website</label>
+                <input type="text" id="website-bf" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+                  <input type="text" id="nombre" name="nombre"
+                    placeholder="Tu nombre"
+                    autocomplete="name" required
+                    aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email"
+                    placeholder="tu@email.com"
+                    autocomplete="email" required
+                    aria-required="true" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono"
+                    placeholder="+34 600 000 000"
+                    autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label for="tipo_negocio">Tipo de negocio</label>
+                  <input type="text" id="tipo_negocio" name="tipo_negocio"
+                    placeholder="Comercio, clínica, marca…" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                <textarea id="mensaje" name="mensaje" rows="4"
+                  placeholder="Cuéntanos brevemente tu situación y qué necesitas mejorar."
+                  required aria-required="true"></textarea>
+              </div>
+
+              <div class="form-group form-group--consent">
+                <label class="form-consent">
+                  <input type="checkbox" name="consent" required aria-required="true" />
+                  <span class="form-consent__text">
+                    He leído y acepto la
+                    <a href="/privacidad/" target="_blank" rel="noopener">política de privacidad</a>.
+                    Mis datos se usarán exclusivamente para atender esta solicitud.
+                  </span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full btn--lg" data-track="cta_diagnostico">
+                Solicitar diagnóstico
+              </button>
+
+              <div class="form-success" hidden role="alert">
+                <div>
+                  <strong>Mensaje recibido.</strong>
+                  <p>Te respondemos en menos de 24 horas en días laborables.</p>
+                </div>
+              </div>
+
+              <div class="form-error" hidden role="alert">
+                Ha ocurrido un error al enviar el mensaje. Inténtalo de nuevo o escríbenos a
+                <a href="mailto:hola@brinkflow.es" style="color:inherit;text-decoration:underline">hola@brinkflow.es</a>.
+              </div>
+
+              <p class="form-note">Sin compromiso. Sin spam. Solo una conversación honesta.</p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="#inicio" class="footer__logo" aria-label="BrinkFlow — inicio">
+            <img src="assets/img/logo-brinkflow.svg" alt="BrinkFlow" class="footer__logo-img" width="120" height="32" />
+          </a>
+          <p>Marketing digital con criterio para negocios que quieren dejar de improvisar.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram de BrinkFlow" class="social-link">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn de BrinkFlow" class="social-link">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navegación</h4>
+          <ul role="list">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#planes">Planes y precios</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Solicitar diagnóstico</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="/legal/">Aviso legal</a></li>
+            <li><a href="/privacidad/">Política de privacidad</a></li>
+            <li><a href="/cookies/">Política de cookies</a></li>
+          </ul>
+          <h4 style="margin-top:1.5rem">Contacto</h4>
+          <ul role="list">
+            <li><a href="mailto:hola@brinkflow.es">hola@brinkflow.es</a></li>
+            <li><a href="tel:+34634476621">+34 634 476 621</a></li>
+            <li><span style="color:rgba(255,255,255,0.3);font-size:.8rem">L–V, 9:00 – 17:00</span></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 BrinkFlow — Agencia de marketing digital</p>
+        <div class="footer__legal">
+          <a href="/privacidad/">Política de privacidad</a>
+          <a href="/legal/">Aviso legal</a>
+          <a href="/cookies/">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Banner de cookies (RGPD / LSSI-CE) -->
+  <div id="cookieBanner" class="cookie-banner"
+    role="dialog" aria-modal="true"
+    aria-label="Aviso de cookies" aria-live="polite" aria-atomic="true">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p>Usamos cookies esenciales para el funcionamiento del sitio. Con tu permiso, también usamos cookies de análisis y marketing.
+          <a href="/cookies/">Política de cookies</a> · <a href="/privacidad/">Privacidad</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookieManage"  class="btn btn--ghost btn--sm">Gestionar</button>
+        <button id="cookieDecline" class="btn btn--ghost btn--sm">Solo necesarias</button>
+        <button id="cookieAccept"  class="btn btn--primary btn--sm">Aceptar todo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/34634476621?text=Hola%2C+me+interesa+saber+m%C3%A1s+sobre+BrinkFlow."
+     class="whatsapp-bubble" target="_blank" rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp con BrinkFlow">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-bubble__tooltip">¿Hablamos?<br><strong>Equipo BrinkFlow.</strong></span>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
