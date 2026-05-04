@@ -255,18 +255,9 @@ function bfLog(...args) {
   if (DEV) console.log('%c[BrinkFlow]', 'color:#C4714A;font-weight:bold', ...args);
 }
 
-/*
-  ──────────────────────────────────────────────────────────────────
-  IDs DE TRACKING
-  ──────────────────────────────────────────────────────────────────
-  Reemplazar estos placeholders con los IDs reales cuando estén disponibles.
-  GA4_ID        → Google Analytics 4 de BrinkFlow
-  META_PIXEL_ID → Meta Pixel de BrinkFlow
-  ──────────────────────────────────────────────────────────────────
-*/
-const GA4_ID        = 'G-BSECGJGCDQ';         
+const GA4_ID        = 'G-PBXRRWPT7V';         
 const GTM_ID        = 'GTM-XXXXXXX';
-const META_PIXEL_ID = '2364129480769581';         
+const META_PIXEL_ID = '976992555120925';         
 
 const CONSENT_KEY     = 'bf_consent';
 const CONSENT_VERSION = '1';
