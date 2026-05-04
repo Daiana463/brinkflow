@@ -264,9 +264,9 @@ function bfLog(...args) {
   META_PIXEL_ID → Meta Pixel de BrinkFlow
   ──────────────────────────────────────────────────────────────────
 */
-const GA4_ID        = '';          /* ← pegar ID de GA4 cuando esté disponible */
+const GA4_ID        = 'G-BSECGJGCDQ';         
 const GTM_ID        = 'GTM-XXXXXXX';
-const META_PIXEL_ID = '';          /* ← pegar ID de Meta Pixel cuando esté disponible */
+const META_PIXEL_ID = '2364129480769581';         
 
 const CONSENT_KEY     = 'bf_consent';
 const CONSENT_VERSION = '1';
