@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1F1F1D" />
 
   <!-- SEO primario -->
   <title>BrinkFlow | Agencia de Marketing Digital y Performance Marketing en España</title>
-  <meta name="description" content="Agencia de marketing digital y performance marketing en España. Gestión de Meta Ads, Google Ads y contenido para comercios, clínicas estéticas y marcas de bienestar. Criterio, constancia y resultados medibles." />
-  <meta name="keywords" content="agencia marketing digital, performance marketing, Meta Ads España, Google Ads España, marketing digital comercios, marketing clínicas estéticas, marketing bienestar, agencia redes sociales España" />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Agencia de marketing digital y performance marketing en España. Meta Ads, Google Ads y estrategia mensual para comercios, clínicas estéticas y marcas de bienestar. Planes desde 320 €/mes. Criterio, datos y resultados medibles." />
+  <meta name="author" content="BrinkFlow" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="geo.region" content="ES" />
+  <meta name="geo.placename" content="España" />
   <link rel="canonical" href="https://brinkflow.es/" />
 
   <!-- Open Graph -->
@@ -16,8 +19,11 @@
   <meta property="og:url"         content="https://brinkflow.es/" />
   <meta property="og:title"       content="BrinkFlow | Agencia de Marketing Digital y Performance Marketing en España" />
   <meta property="og:description" content="Ordenamos y tomamos decisiones sobre tu marketing para que dejes de improvisar. Meta Ads, Google Ads, contenido y estrategia mensual para negocios con criterio." />
-  <meta property="og:image"       content="https://brinkflow.es/assets/img/og-brinkflow.jpg" />
-  <meta property="og:site_name"   content="BrinkFlow" />
+  <meta property="og:image"        content="https://brinkflow.es/assets/img/og-brinkflow.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"    content="BrinkFlow — Agencia de marketing digital y performance marketing en España" />
+  <meta property="og:site_name"    content="BrinkFlow" />
   <meta property="og:locale"      content="es_ES" />
 
   <!-- Twitter Card -->
@@ -26,29 +32,153 @@
   <meta name="twitter:description" content="Marketing digital con criterio. Meta Ads, Google Ads y contenido para negocios que quieren dejar de improvisar." />
   <meta name="twitter:image"       content="https://brinkflow.es/assets/img/og-brinkflow.jpg" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org @graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "BrinkFlow",
-    "url": "https://brinkflow.es",
-    "email": "hola@brinkflow.es",
-    "telephone": "+34634476621",
-    "description": "Agencia de marketing digital y performance marketing en España. Gestión de campañas Meta Ads y Google Ads, contenido para redes y estrategia mensual para comercios, clínicas estéticas y marcas de bienestar.",
-    "areaServed": {
-      "@type": "Country",
-      "name": "España"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Planes de marketing digital",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Plan Base", "price": "320", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Plan Control", "price": "580", "priceCurrency": "EUR" },
-        { "@type": "Offer", "name": "Plan Dirección", "price": "820", "priceCurrency": "EUR" }
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://brinkflow.es/#organization",
+        "name": "BrinkFlow",
+        "alternateName": "BrinkFlow Agencia de Marketing Digital",
+        "url": "https://brinkflow.es",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://brinkflow.es/#logo",
+          "url": "https://brinkflow.es/assets/img/logo-brinkflow.svg",
+          "width": 140,
+          "height": 36,
+          "caption": "BrinkFlow"
+        },
+        "image": {"@id": "https://brinkflow.es/#logo"},
+        "email": "hola@brinkflow.es",
+        "telephone": "+34634476621",
+        "description": "BrinkFlow es una agencia de marketing digital y performance marketing en España. Gestión de Meta Ads, Google Ads, estrategia mensual, contenido para redes sociales y análisis de resultados para comercios, clínicas estéticas y centros de bienestar.",
+        "areaServed": {"@type": "Country", "name": "España"},
+        "knowsAbout": ["Marketing digital","Performance marketing","Meta Ads","Google Ads","Gestión de redes sociales","Content marketing","Email marketing","Analítica digital","CRO"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "hola@brinkflow.es",
+          "telephone": "+34634476621",
+          "contactType": "customer service",
+          "availableLanguage": "Spanish",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://brinkflow.es/#website",
+        "url": "https://brinkflow.es",
+        "name": "BrinkFlow",
+        "description": "Agencia de marketing digital y performance marketing en España",
+        "publisher": {"@id": "https://brinkflow.es/#organization"},
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://brinkflow.es/#business",
+        "name": "BrinkFlow — Agencia de Marketing Digital",
+        "url": "https://brinkflow.es",
+        "telephone": "+34634476621",
+        "email": "hola@brinkflow.es",
+        "description": "Agencia de marketing digital y performance marketing en España. Meta Ads, Google Ads, estrategia mensual, contenido para redes sociales y análisis de resultados para negocios que quieren crecer con criterio.",
+        "priceRange": "320 € – 950 €/mes +IVA",
+        "currenciesAccepted": "EUR",
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "areaServed": {"@type": "Country", "name": "España"},
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Planes de marketing digital",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Plan Base — Marketing digital mensual",
+                "description": "Estrategia mensual, calendario editorial, gestión de 1 red social y 12 publicaciones al mes. Para negocios que quieren presencia constante y profesional."
+              },
+              "price": "320",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Plan Control — Marketing digital con Meta Ads",
+                "description": "Gestión de 2 redes sociales, campañas Meta Ads activas, 20 publicaciones al mes e informe completo con decisiones basadas en datos."
+              },
+              "price": "580",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Plan Dirección — Performance marketing multicanal",
+                "description": "Meta Ads completo + Google Ads, gestión multicanal, producción de contenido estratégico y dirección creativa mensual para marcas que quieren escalar con datos."
+              },
+              "price": "820",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://brinkflow.es/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta contratar una agencia de marketing digital en España?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En BrinkFlow los planes comienzan desde 320 €/mes (Plan Base) hasta 820 €/mes (Plan Dirección), más un Plan a medida desde 950 €/mes. Todos los precios son sin IVA e incluyen estrategia mensual, gestión de contenido, campañas de pago e informes de resultados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es el performance marketing y en qué se diferencia del marketing tradicional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El performance marketing es una disciplina del marketing digital donde cada acción se orienta a resultados medibles: leads generados, ventas, ROAS o coste por adquisición (CPA). A diferencia del marketing tradicional, cada euro invertido tiene un impacto trazable y optimizable en tiempo real."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye la gestión de Meta Ads (Facebook e Instagram)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La gestión de Meta Ads en BrinkFlow incluye: definición de objetivos de campaña, segmentación de audiencias, creación de creatividades, lanzamiento y optimización continua, seguimiento de conversiones y análisis mensual con decisiones accionables. No se lanza ninguna campaña sin estrategia previa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo se tarda en ver resultados con marketing digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En campañas de pago (Meta Ads o Google Ads) los primeros datos relevantes aparecen entre 2 y 4 semanas. Para contenido orgánico, el impacto en imagen y engagement se percibe a partir del primer mes. BrinkFlow trabaja con informes mensuales para analizar qué funciona y ajustar la estrategia con datos reales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Trabajáis con comercios locales, clínicas estéticas y pequeñas empresas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. BrinkFlow trabaja principalmente con comercios, clínicas estéticas, centros de bienestar y marcas en España. Adaptamos la estrategia y el presupuesto al tamaño y objetivos de cada negocio, desde negocios que empiezan hasta marcas que quieren escalar con datos."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -56,6 +186,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- DNS prefetch para servicios externos -->
+  <link rel="dns-prefetch" href="https://api.web3forms.com" />
+  <link rel="dns-prefetch" href="https://connect.facebook.net" />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -91,6 +226,8 @@
 </head>
 <body>
 
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
   <!-- ═══════════════════════════════════════════
        HEADER / NAVEGACIÓN
   ════════════════════════════════════════════ -->
@@ -99,14 +236,14 @@
       <nav class="nav" role="navigation" aria-label="Navegación principal">
 
         <a href="#inicio" class="nav__logo" aria-label="BrinkFlow — inicio">
-          <img src="assets/img/logo-brinkflow.svg" alt="BrinkFlow" class="nav__logo-img" width="140" height="36" />
+          <img src="assets/img/logo-brinkflow.svg" alt="BrinkFlow — Agencia de marketing digital" class="nav__logo-img" width="140" height="36" />
         </a>
 
         <ul class="nav__links" role="list">
           <li><a href="#servicios"  class="nav__link">Servicios</a></li>
           <li><a href="#planes"     class="nav__link">Planes</a></li>
+          <li><a href="/sectores/"  class="nav__link">Sectores</a></li>
           <li><a href="#nosotros"   class="nav__link">Sobre nosotros</a></li>
-          <li><a href="#proceso"    class="nav__link">Proceso</a></li>
           <li><a href="#contacto"   class="btn btn--nav" data-track="cta_nav_contacto">Solicitar diagnóstico</a></li>
         </ul>
 
@@ -123,6 +260,7 @@
         <ul role="list">
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#planes">Planes</a></li>
+          <li><a href="/sectores/">Sectores</a></li>
           <li><a href="#nosotros">Sobre nosotros</a></li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="#contacto">Solicitar diagnóstico</a></li>
@@ -245,7 +383,7 @@
           <div class="service-item" data-animate>
             <p class="service-item__num">01</p>
             <h3 class="service-item__title">Estrategia mensual de marketing digital</h3>
-            <p>Definimos qué hacer, en qué canales y con qué objetivo cada mes. No se improvisa, se planifica.</p>
+            <p>Definimos los canales, el funnel y los objetivos de cada mes. No se improvisa: se planifica con criterio y se ajusta con datos.</p>
           </div>
           <div class="service-item" data-animate>
             <p class="service-item__num">02</p>
@@ -255,12 +393,12 @@
           <div class="service-item" data-animate>
             <p class="service-item__num">03</p>
             <h3 class="service-item__title">Meta Ads — Facebook e Instagram</h3>
-            <p>Diseñamos, lanzamos y optimizamos campañas de pago con foco en resultados medibles, no en impresiones.</p>
+            <p>Diseñamos, lanzamos y optimizamos campañas en Facebook e Instagram con foco en resultados medibles: leads, ventas y ROAS. No en impresiones.</p>
           </div>
           <div class="service-item" data-animate>
             <p class="service-item__num">04</p>
             <h3 class="service-item__title">Google Ads cuando aplique</h3>
-            <p>Para negocios donde la búsqueda activa tiene sentido: búsqueda, display o remarketing con criterio.</p>
+            <p>Campañas de búsqueda, display y remarketing para negocios donde captar la intención activa tiene sentido. Palabras clave, audiencias y presupuesto optimizados.</p>
           </div>
           <div class="service-item" data-animate>
             <p class="service-item__num">05</p>
@@ -562,6 +700,61 @@
 
 
     <!-- ═══════════════════════════════════════════
+         PREGUNTAS FRECUENTES
+    ════════════════════════════════════════════ -->
+    <section id="faq" class="section bg-beige" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+
+        <div class="faq-header text-center" data-animate>
+          <span class="section__eyebrow">Preguntas frecuentes</span>
+          <h2 id="faq-title" class="section__title">
+            Lo que nos preguntan<br>antes de empezar.
+          </h2>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item" data-animate>
+            <summary class="faq-item__q">¿Cuánto cuesta contratar una agencia de marketing digital en España?</summary>
+            <div class="faq-item__a">
+              <p>En BrinkFlow los planes comienzan desde <strong>320 €/mes</strong> (Plan Base) hasta <strong>820 €/mes</strong> (Plan Dirección), más un Plan a medida desde 950 €/mes para marcas con necesidades específicas. Todos los precios son sin IVA e incluyen estrategia mensual, gestión de contenido, campañas de pago e informes con decisiones.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-animate>
+            <summary class="faq-item__q">¿Qué es el performance marketing?</summary>
+            <div class="faq-item__a">
+              <p>El performance marketing es una disciplina del marketing digital donde cada acción se orienta a resultados medibles: leads generados, ventas, ROAS o coste por adquisición (CPA). A diferencia del marketing genérico, cada euro invertido tiene un impacto trazable. En BrinkFlow lo aplicamos a través de campañas de Meta Ads y Google Ads optimizadas con datos reales.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-animate>
+            <summary class="faq-item__q">¿Qué incluye la gestión de campañas Meta Ads?</summary>
+            <div class="faq-item__a">
+              <p>Incluye definición de objetivos, segmentación de audiencias, creación de creatividades, lanzamiento y optimización continua de campañas en Facebook e Instagram, seguimiento de conversiones y análisis mensual con decisiones accionables. No se lanza ninguna campaña sin objetivos medibles definidos de antemano.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-animate>
+            <summary class="faq-item__q">¿Cuánto tiempo se tarda en ver resultados con marketing digital?</summary>
+            <div class="faq-item__a">
+              <p>En campañas de pago (Meta Ads o Google Ads) los primeros datos relevantes aparecen entre 2 y 4 semanas de optimización. Para contenido orgánico, el impacto en imagen y engagement se percibe a partir del primer mes. Trabajamos con informes mensuales para analizar qué funciona y ajustar la estrategia con datos reales.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-animate>
+            <summary class="faq-item__q">¿Trabajáis con comercios locales, clínicas estéticas y pequeñas empresas?</summary>
+            <div class="faq-item__a">
+              <p>Sí. Trabajamos principalmente con comercios, clínicas estéticas, centros de bienestar y marcas en España. Adaptamos la estrategia y el presupuesto al tamaño y objetivos de cada negocio. Si no sabes qué plan necesitas, empezamos con un <a href="#contacto">diagnóstico gratuito</a> sin compromiso.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
          CONTACTO
     ════════════════════════════════════════════ -->
     <section id="contacto" class="section bg-ink" aria-labelledby="contacto-title">
@@ -577,6 +770,7 @@
               Cuéntanos dónde estás con tu marketing. Analizamos tu situación y te decimos sin rodeos qué tiene sentido hacer y qué no. Sin compromiso.
             </p>
 
+            <address>
             <ul class="contact-details" data-animate>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -591,6 +785,7 @@
                 <span>Lunes a viernes, 9:00 – 17:00 h</span>
               </li>
             </ul>
+            </address>
           </div>
         <div class="contact-form" data-animate>
           <form class="js-contact-form" id="contactForm"
@@ -694,7 +889,7 @@
 
         <div class="footer__brand">
           <a href="#inicio" class="footer__logo" aria-label="BrinkFlow — inicio">
-            <img src="assets/img/logo-brinkflow.svg" alt="BrinkFlow" class="footer__logo-img" width="120" height="32" />
+            <img src="assets/img/logo-brinkflow.svg" alt="BrinkFlow — Agencia de marketing digital" class="footer__logo-img" width="120" height="32" />
           </a>
           <p>Marketing digital con criterio para negocios que quieren dejar de improvisar.</p>
           <div class="footer__social">
