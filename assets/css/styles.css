@@ -2020,7 +2020,7 @@ a:focus-visible {
   font-size: 0.82rem;
   color: var(--ink-faint);
   line-height: 1.55;
-  margin: 0 0 1rem;
+  margin: 0;
 }
 .rubro-card__arrow {
   display: inline-flex;
