@@ -745,7 +745,7 @@ a:focus-visible {
 
 .plan-card__price {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-size: clamp(1rem, 1.5vw, 1rem);
   font-weight: 600;
   color: var(--ink);
   line-height: 1;
