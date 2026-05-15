@@ -2177,15 +2177,11 @@ a:focus-visible {
 .faq-item__a a { color: var(--terra); text-decoration: underline; }
 .faq-item__a a:hover { color: var(--terra-dk); }
 
-/* Botón secundario Ver planes — texto blanco siempre (hero y sector-hero) */
-.hero .btn--outline[data-track="cta_ver_planes"],
-.hero [data-track="cta_ver_planes"],
+/* Botón Ver planes en páginas de sectores (fondo oscuro) — texto blanco */
 .sector-hero__cta .btn--outline {
   color: var(--white) !important;
   border-color: rgba(255,255,255,0.45) !important;
 }
-.hero .btn--outline[data-track="cta_ver_planes"]:hover,
-.hero [data-track="cta_ver_planes"]:hover,
 .sector-hero__cta .btn--outline:hover {
   color: var(--white) !important;
   border-color: var(--white) !important;
