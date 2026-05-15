@@ -2176,3 +2176,15 @@ a:focus-visible {
 .faq-item__a strong { color: var(--ink-mid); font-weight: 600; }
 .faq-item__a a { color: var(--terra); text-decoration: underline; }
 .faq-item__a a:hover { color: var(--terra-dk); }
+
+/* Botón secundario Ver planes — texto blanco siempre */
+[data-track="cta_ver_planes"] {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.45);
+}
+[data-track="cta_ver_planes"]:hover {
+  color: var(--white);
+  border-color: var(--white);
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-1px);
+}
